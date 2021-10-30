@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Overpass', sans-serif;
+  color: #fff;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+
+}
+
+h1 {
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
