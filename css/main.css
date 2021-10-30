@@ -6,6 +6,7 @@ html {
   text-size-adjust: 100%;
   font-family: Overpass, sans-serif;
   color: #fff;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -23,11 +24,13 @@ body {
 }
 
 header {
-
+  padding: 6vmin;
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
 }
 
 main {
@@ -35,19 +38,49 @@ main {
   height: 100%;
 }
 
-section{
-  display: flex;
-  flex-direction: rows;
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6vmin;
+  padding: 6vmin;
 }
 
 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.icon {
+  order: 1;
+  width: 8rem;
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1.5rem;
 }
 
 p {
-  font-weight: 400;
+  font-weight: normal;
+  margin: 1.5rem;
+}
+
+a {
+  padding: 1rem;
+  border: .2rem solid rgba(255, 255, 255, .7);
+  color: #fff;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #ff5e3a;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-style: normal;
 }
