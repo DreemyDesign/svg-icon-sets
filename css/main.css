@@ -28,7 +28,8 @@ header {
 h1 {
   font-weight: bold;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
+  padding: 0 1rem;
 }
 
 main {
@@ -38,8 +39,8 @@ main {
 
 section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 6vmin;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
   padding: 6vmin;
 }
 
@@ -104,4 +105,17 @@ svg {
 h3 {
   font-size: 1.1rem;
   font-style: normal;
+}
+
+@media only screen and (min-width: 38em) {
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6vmin;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
 }
